@@ -1,10 +1,11 @@
 import  "./sidebar.css";
 import { HomeOutlined, ListOutlined, GroupOutlined, MenuBookOutlined, AddPhotoAlternateOutlined, VideoLibraryOutlined, WatchLaterOutlined, BallotOutlined, SettingsOutlined, ExitToAppOutlined, FingerprintOutlined } from "@material-ui/icons";
 import React, { useState } from 'react'
+import { useSelector } from "react-redux";
 
 export default function Sidebar() {
-const value = "redox"
-const [name, setName] = useState(value)
+    const name = useSelector((state) => state.user.name);
+
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">

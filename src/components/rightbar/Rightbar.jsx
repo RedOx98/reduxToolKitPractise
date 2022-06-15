@@ -1,10 +1,11 @@
 import "./rightbar.css";
 import React, { useState } from 'react'
 import { ArrowDropDownOutlined } from "@material-ui/icons";
+import { useSelector } from "react-redux";
 
 const Rightbar = () => {
-const value = "redox"
-const [name, setName] = useState(value)
+    const name = useSelector((state) => state.user.name);
+
   return (
     <div className="rightbar">
     <div className="rightbarWidgets">
@@ -17,7 +18,7 @@ const [name, setName] = useState(value)
     </div>
     <div className="rightbarItemsList">
         <span className="rightbarItemsName">
-            Popular on Redox App
+            Popular on {name} App
         </span>
         <img src="https://images.pexels.com/photos/2049411/pexels-photo-2049411.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" className="rightbarItemsImg"/>
     </div>
