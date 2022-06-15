@@ -1,0 +1,88 @@
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.topbarWrapper{
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 25px;
+    margin-right: 5px;
+    color: darkblue;
+    cursor: pointer;
+}
+
+
+.topbarList{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    list-style-type: none;
+    margin-top: 10px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.topbarLists{
+    text-decoration: none;
+    margin-right: 50px;
+    margin-left: 300x;
+}
+
+
+
+.topCenterSearch{
+    width: 300px;
+    border: 1px solid black;
+    padding: 0px 5px;
+    border-radius: 10px;
+    margin-right: 380px;
+    margin-top: 10px;
+}
+
+.topLeft{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.topRight{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 2;
+}
+
+.topbarIconContainer{
+    cursor: pointer;
+    margin-right: 10px;
+    color: #555;
+}
+
+.topIconContainerImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.topIconContainerName{
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
